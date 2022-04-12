@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/one"
+        android:title= " Choice 1"
+        android:icon="@drawable/first_menu"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/selection3"
+        android:title="Vegan Burger (7$)"
+        app:showAsAction="collapseActionView">
+
+    </item>
+
+
+    <item
+        android:id="@+id/selection1"
+        android:title="Chicken Burger (8$)"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item
+                android:id="@+id/subitem1"
+                android:title="With Cheese "
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/selection2"
+        android:title="Meat Burger (15$)"
+        app:showAsAction="collapseActionView">
+        <menu>
+            <item
+                android:id="@+id/subitem2"
+                android:title="With french fries "
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+
+</menu>
+
